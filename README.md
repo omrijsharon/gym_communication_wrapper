@@ -23,7 +23,7 @@ In every environment we have observation_space and action_space. Now we are addi
 ### Example:
 Continuous communication space with 8 channels (can be seen as 8 words per sentence):
 ```
-com_space = gym.spaces.Box(low=-np.inf, high=np.inf, shape=(com_channels,), dtype=np.float32)
+com_space = gym.spaces.Box(low=-np.inf, high=np.inf, shape=(8,), dtype=np.float32)
 ```
 Discrete communication space with 8 channels and bandwidth of 5 (can be seen as 8 words in sentence with a vocabulary of 5 words in total):
 ```
